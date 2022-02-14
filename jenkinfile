@@ -1,16 +1,18 @@
     pipeline  {
-    agent {
-        label 'jenkinsslave1'
-        }
+       agent any 
         stages {
-           stage('checkout') 
-           {
-           steps
-             {
-              checkout scm 
+          stage {'Example') {
+        steps {
+            echo 'Hello World'
+           }
             }
-                 
-         }
- 
-   }  
-}
+            }
+             post { 1
+                always {2
+                   echo 'i will always say hello again !'
+                 }
+                }
+               }
+        
+        
+
